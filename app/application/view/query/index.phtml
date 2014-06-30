@@ -1,0 +1,21 @@
+<p>
+    <a href="?pag=query&action=novo&cliente_id=<?php echo $this->data['cliente_id']; ?>" class="btn btn-primary">Novo</a>
+</p>
+<table class="table table-striped">
+    <tr>
+        <th><b>Nome Consulta</b></th>
+        <th></th>
+        <th></th>
+    </tr>
+    <?php foreach($this->data['dados'] as $d){ ?>
+    <tr>
+        <td><?php echo $d['name']; ?></td>
+        <td>
+            <a href="?pag=webservice&id=<?php echo $d['id']; ?>" target="_blank">WebService</a>
+        </td>
+        <td>
+            <a href="?pag=query&action=editar&cliente_id=<?php echo $d['cliente_id']; ?>&id=<?php echo $d['id']; ?>">Editar</a>
+        </td>
+    </tr>
+    <?php } ?>
+</table>

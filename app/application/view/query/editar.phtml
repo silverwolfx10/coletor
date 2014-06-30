@@ -1,0 +1,22 @@
+<form role="form" class="formLimit" method="post" enctype="application/x-www-form-urlencoded">
+    <div class="form-group">
+        <label >Nome Consulta:</label>
+        <input type="text" class="form-control"   name="name" value="<?php echo $this->data['data']['name']; ?>" />
+    </div>
+    <div class="form-group">
+        <label >Conexão:</label>
+        <select name="conexao_id" class="form-control">
+            <?php foreach($this->data['conexoes'] as $d){ ?>
+                <option value="<?php echo $d['conexao_id']; ?>" <?php if($d['conexao_id'] == $this->data['data']['conexao_id']){echo 'selected="selected"';}; ?>><?php echo $d['name']." ".$d['driver']; ?></option>
+            <?php } ?>
+        </select>
+    </div>
+    <div class="form-group">
+        <label >Consulta:</label>
+        <textarea name="query" class="form-control" rows="8"><?php echo $this->data['data']['query']; ?></textarea>
+    </div>
+    <input type="hidden" name="cliente_id" value="<?php echo $this->data['cliente_id']; ?>"/>
+    <input type="hidden" name="id" value="<?php echo $this->data['data']['id']; ?>"/>
+
+    <a href="?pag=query&cliente_id=<?php echo $this->data['cliente_id']; ?>" class="btn btn-default">Voltar</a> <button type="submit" class="btn btn-primary">Enviar</button>
+</form>

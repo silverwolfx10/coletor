@@ -1,0 +1,61 @@
+exception 'PDOException' with message 'SQLSTATE[HY000] [2005] Unknown MySQL server host '186.202.60.188:22' (0)' in /vagrant/app/application/config/conexao.php:16
+Stack trace:
+#0 /vagrant/app/application/config/conexao.php(16): PDO->__construct('mysql:host=186....', 'root', 'b85c@bak%', Array)
+#1 /vagrant/app/public/index.php(13): Conexao->__construct('mysql', '186.202.60.188:...', 'rest', 'root', 'b85c@bak%')
+#2 {main}exception 'PDOException' with message 'SQLSTATE[HY000] [1130] Host '201-92-205-169.dsl.telesp.net.br' is not allowed to connect to this MySQL server' in /vagrant/app/application/config/conexao.php:16
+Stack trace:
+#0 /vagrant/app/application/config/conexao.php(16): PDO->__construct('mysql:host=186....', 'root', 'b85c@bak%', Array)
+#1 /vagrant/app/public/index.php(13): Conexao->__construct('mysql', '186.202.60.188', 'rest', 'root', 'b85c@bak%')
+#2 {main}exception 'PDOException' with message 'SQLSTATE[HY000] [1130] Host '201-92-205-169.dsl.telesp.net.br' is not allowed to connect to this MySQL server' in /vagrant/app/application/config/conexao.php:16
+Stack trace:
+#0 /vagrant/app/application/config/conexao.php(16): PDO->__construct('mysql:host=186....', 'root', 'b85c@bak%', Array)
+#1 /vagrant/app/public/index.php(13): Conexao->__construct('mysql', '186.202.60.188', 'rest', 'root', 'b85c@bak%')
+#2 {main}exception 'PDOException' with message 'SQLSTATE[HY000] [2005] Unknown MySQL server host '186.202.60.188:22' (0)' in /vagrant/app/application/config/conexao.php:16
+Stack trace:
+#0 /vagrant/app/application/config/conexao.php(16): PDO->__construct('mysql:host=186....', 'root', 'b85c@bak%', Array)
+#1 /vagrant/app/public/index.php(13): Conexao->__construct('mysql', '186.202.60.188:...', 'rest', 'root', 'b85c@bak%')
+#2 {main}exception 'PDOException' with message 'SQLSTATE[HY000] [2005] Unknown MySQL server host '186.202.60.188:22' (0)' in /vagrant/app/application/config/conexao.php:16
+Stack trace:
+#0 /vagrant/app/application/config/conexao.php(16): PDO->__construct('mysql:host=186....', 'root', 'b85c@bak%', Array)
+#1 /vagrant/app/public/index.php(13): Conexao->__construct('mysql', '186.202.60.188:...', 'rest', 'root', 'b85c@bak%')
+#2 {main}exception 'PDOException' with message 'SQLSTATE[HY000] [2005] Unknown MySQL server host '186.202.60.188:22' (0)' in /vagrant/app/application/config/conexao.php:16
+Stack trace:
+#0 /vagrant/app/application/config/conexao.php(16): PDO->__construct('mysql:host=186....', 'root', 'b85c@bak%', Array)
+#1 /vagrant/app/public/index.php(13): Conexao->__construct('mysql', '186.202.60.188:...', 'rest', 'root', 'b85c@bak%')
+#2 {main}exception 'PDOException' with message 'SQLSTATE[HY000] [2005] Unknown MySQL server host '186.202.60.188:22' (0)' in /vagrant/app/application/config/conexao.php:16
+Stack trace:
+#0 /vagrant/app/application/config/conexao.php(16): PDO->__construct('mysql:host=186....', 'root', 'b85c@bak%', Array)
+#1 /vagrant/app/public/index.php(13): Conexao->__construct('mysql', '186.202.60.188:...', 'rest', 'root', 'b85c@bak%')
+#2 {main}exception 'PDOException' with message 'SQLSTATE[HY000] [2005] Unknown MySQL server host '186.202.60.188:22' (0)' in /vagrant/app/application/config/conexao.php:16
+Stack trace:
+#0 /vagrant/app/application/config/conexao.php(16): PDO->__construct('mysql:host=186....', 'root', 'b85c@bak%', Array)
+#1 /vagrant/app/public/index.php(13): Conexao->__construct('mysql', '186.202.60.188:...', 'rest', 'root', 'b85c@bak%')
+#2 {main}exception 'PDOException' with message 'could not find driver' in /vagrant/app/application/config/conexao.php:16
+Stack trace:
+#0 /vagrant/app/application/config/conexao.php(16): PDO->__construct(':host=; dbname=...', NULL, NULL, Array)
+#1 /vagrant/app/public/index.php(21): Conexao->__construct(NULL, NULL, NULL, NULL, NULL)
+#2 {main}exception 'PDOException' with message 'SQLSTATE[HY000] [2005] Unknown MySQL server host 'sdsasds' (0)' in /vagrant/app/public/..\application\config\Conexao.php:16
+Stack trace:
+#0 /vagrant/app/public/..\application\config\Conexao.php(16): PDO->__construct('mysql:host=sdsa...', 'sdsdsad', 'sdsd', Array)
+#1 /vagrant/app/application/controller/webservice.php(14): application\config\Conexao->__construct('mysql', 'sdsasds', 'sdasdsd', 'sdsdsad', 'sdsd')
+#2 /vagrant/app/public/..\application\controller\ControllerAbstract.php(20): webservice->index()
+#3 /vagrant/app/public/index.php(15): application\controller\ControllerAbstract->__construct(false, Object(application\config\Conexao), Array, Array)
+#4 {main}exception 'PDOException' with message 'SQLSTATE[HY000] [2005] Unknown MySQL server host 'sdsasds' (0)' in /vagrant/app/public/..\application\config\Conexao.php:16
+Stack trace:
+#0 /vagrant/app/public/..\application\config\Conexao.php(16): PDO->__construct('mysql:host=sdsa...', 'sdsdsad', 'sdsd', Array)
+#1 /vagrant/app/application/controller/webservice.php(14): application\config\Conexao->__construct('mysql', 'sdsasds', 'sdasdsd', 'sdsdsad', 'sdsd')
+#2 /vagrant/app/public/..\application\controller\ControllerAbstract.php(20): webservice->index()
+#3 /vagrant/app/public/index.php(15): application\controller\ControllerAbstract->__construct(false, Object(application\config\Conexao), Array, Array)
+#4 {main}exception 'PDOException' with message 'SQLSTATE[HY000] [2005] Unknown MySQL server host 'sdsasds' (0)' in /vagrant/app/public/..\application\config\Conexao.php:16
+Stack trace:
+#0 /vagrant/app/public/..\application\config\Conexao.php(16): PDO->__construct('mysql:host=sdsa...', 'sdsdsad', 'sdsd', Array)
+#1 /vagrant/app/application/controller/webservice.php(14): application\config\Conexao->__construct('mysql', 'sdsasds', 'sdasdsd', 'sdsdsad', 'sdsd')
+#2 /vagrant/app/public/..\application\controller\ControllerAbstract.php(20): webservice->index()
+#3 /vagrant/app/public/index.php(15): application\controller\ControllerAbstract->__construct(false, Object(application\config\Conexao), Array, Array)
+#4 {main}exception 'PDOException' with message 'SQLSTATE[HY000] [2005] Unknown MySQL server host 'sdsasds' (0)' in /vagrant/app/public/..\application\config\Conexao.php:16
+Stack trace:
+#0 /vagrant/app/public/..\application\config\Conexao.php(16): PDO->__construct('mysql:host=sdsa...', 'sdsdsad', 'sdsd', Array)
+#1 /vagrant/app/application/controller/webservice.php(14): application\config\Conexao->__construct('mysql', 'sdsasds', 'sdasdsd', 'sdsdsad', 'sdsd')
+#2 /vagrant/app/public/..\application\controller\ControllerAbstract.php(20): webservice->index()
+#3 /vagrant/app/public/index.php(15): application\controller\ControllerAbstract->__construct(false, Object(application\config\Conexao), Array, Array)
+#4 {main}

@@ -1,0 +1,21 @@
+<p>
+    <a href="?pag=conexao&action=novo&cliente_id=<?php echo $this->data['cliente_id']; ?>" class="btn btn-primary">Novo</a>
+</p>
+<table class="table table-striped">
+    <tr>
+        <th><b>Conexao</b></th>
+        <th><b>Driver</b></th>
+        <th><b>Host</b></th>
+        <th></th>
+    </tr>
+    <?php foreach($this->data['dados'] as $d){ ?>
+    <tr>
+        <td><?php echo $d['name']; ?></td>
+        <td><?php echo $d['driver']; ?></td>
+        <td><?php echo $d['host']; ?></td>
+        <td>
+            <a href="?pag=conexao&action=editar&cliente_id=<?php echo $d['cliente_id']; ?>&id=<?php echo $d['conexao_id']; ?>">Editar</a>
+        </td>
+    </tr>
+    <?php } ?>
+</table>
